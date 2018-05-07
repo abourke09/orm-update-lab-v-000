@@ -50,7 +50,7 @@ class Student
   end
 
   def self.new_from_db(array)
-    self.create(array[0], array[1])
+    Student.new(array[0], array[1], array[2])
   end
 
   def self.find_by_name(name)
